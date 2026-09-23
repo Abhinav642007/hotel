@@ -14,14 +14,22 @@
         <div class="section-label">HEADER SECTION</div>
 
         <nav>
-            <h2>MyWebsite</h2>
+    <h2>MyWebsite</h2>
 
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#content">Content</a></li>
-                <li><a href="#footer">Contact</a></li>
-            </ul>
-        </nav>
+```
+<ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#content">Content</a></li>
+    <li><a href="#footer">Contact</a></li>
+</ul>
+
+<button class="theme-toggle" onclick="toggleTheme()" id="themeButton">
+    🌙 Dark
+</button>
+```
+
+</nav>
+
     </header>
 
 
@@ -74,32 +82,129 @@
 
 
     <!-- CONTENT SECTION -->
-    <section class="content" id="content">
+    <!-- CONTENT SECTION -->
 
-        <div class="section-label">CONTENT SECTION</div>
+<section class="content" id="content">
 
-        <h2>Our Content</h2>
+```
+<div class="section-label">CONTENT SECTION</div>
 
-        <div class="cards">
+<div class="content-heading">
+    <span class="content-tag">✦ WHAT WE DO</span>
 
-            <div class="card">
-                <h3>HTML</h3>
-                <p>Creates the structure of the website.</p>
-            </div>
+    <h2>Build. Create. <span>Innovate.</span></h2>
 
-            <div class="card">
-                <h3>CSS</h3>
-                <p>Styles and designs the website.</p>
-            </div>
+    <p>
+        Everything you need to create beautiful, modern and
+        interactive digital experiences.
+    </p>
+</div>
 
-            <div class="card">
-                <h3>JavaScript</h3>
-                <p>Adds interaction to the website.</p>
-            </div>
 
-        </div>
+<div class="content-grid">
 
-    </section>
+    <!-- CARD 1 -->
+    <div class="service-card" onclick="openCard('Web Development')">
+
+        <div class="card-number">01</div>
+
+        <div class="service-icon">🌐</div>
+
+        <h3>Web Development</h3>
+
+        <p>
+            Build fast, responsive and powerful websites
+            that work perfectly on every device.
+        </p>
+
+        <button class="explore-btn">
+            Explore <span>→</span>
+        </button>
+
+    </div>
+
+
+    <!-- CARD 2 -->
+    <div class="service-card" onclick="openCard('Creative Design')">
+
+        <div class="card-number">02</div>
+
+        <div class="service-icon">🎨</div>
+
+        <h3>Creative Design</h3>
+
+        <p>
+            Transform ideas into clean, attractive and
+            user-friendly digital experiences.
+        </p>
+
+        <button class="explore-btn">
+            Explore <span>→</span>
+        </button>
+
+    </div>
+
+
+    <!-- CARD 3 -->
+    <div class="service-card" onclick="openCard('Interactive Experience')">
+
+        <div class="card-number">03</div>
+
+        <div class="service-icon">⚡</div>
+
+        <h3>Interactive Experience</h3>
+
+        <p>
+            Add powerful interactions and animations that
+            make websites engaging and memorable.
+        </p>
+
+        <button class="explore-btn">
+            Explore <span>→</span>
+        </button>
+
+    </div>
+
+
+    <!-- CARD 4 -->
+    <div class="service-card" onclick="openCard('Modern Technology')">
+
+        <div class="card-number">04</div>
+
+        <div class="service-icon">🚀</div>
+
+        <h3>Modern Technology</h3>
+
+        <p>
+            Use modern tools and technologies to create
+            scalable and future-ready projects.
+        </p>
+
+        <button class="explore-btn">
+            Explore <span>→</span>
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- CONTENT BOTTOM -->
+<div class="content-bottom">
+
+    <div>
+        <strong>Ready to build something amazing?</strong>
+        <p>Let's turn your idea into reality.</p>
+    </div>
+
+    <button class="content-cta" onclick="startProject()">
+        Start a Project →
+    </button>
+
+</div>
+```
+
+</section>
 
 
     <!-- FOOTER SECTION -->
